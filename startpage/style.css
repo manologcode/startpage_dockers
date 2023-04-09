@@ -1,0 +1,63 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+    max-width: 800px;
+    margin:30px auto;
+    text-align: center;
+}
+
+#buttons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-icon{
+    margin-top: -90px;
+    background: white;
+    border-radius: 50px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #ccc;
+}
+
+#img-apidocker{
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.exited{
+    filter: brightness(30%);
+}
+.error{
+    background-color: rgb(105, 105, 105)!important;
+    filter: invert(22%) sepia(71%) saturate(7473%) hue-rotate(359deg) brightness(104%) contrast(108%);
+}
+
+.running{
+    border: solid 4px #7ddd96;
+}
+
+.btn{
+    display: block;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    padding: 30px 30px 10px 30px;
+    margin: 10px;
+    width: 120px;
+    text-decoration: none;
+    background-color: #7d7797;
+    color: white;
+    text-transform: uppercase;
+}
+
+.btn > *{
+    margin:0
+}
+
