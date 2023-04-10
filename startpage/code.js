@@ -1,3 +1,6 @@
+const url_base = window.location.origin
+const url_api =  `${url_base}:${port_api}/`
+
 get_status('apidocker')
 document.getElementById('img-apidocker').addEventListener('dblclick', get_list_dockers)
 
@@ -14,10 +17,10 @@ document.getElementById("main_img").src=main_img
 function elementButton(data) {
     const { name, description, port_app, color = false, url_logo = false } = data
     const css_color = color ? color : "#7d7797"
-    let url = window.location.origin + port_app
+    let url = url_base + port_app
     return (
         `<div>
-            <a href="${url}" id="${name}" class="btn" style='background-color:${css_color}'>
+            <a href="${url}" id="${name}" class="btn" style="background-color:${css_color}" target="_blank">
                 <h4>${name}</h4>
             </a>
             <img id="img-${name}" class="img-icon" src=${url_logo} onerror="javascript:this.src='images/default.png'"/>
